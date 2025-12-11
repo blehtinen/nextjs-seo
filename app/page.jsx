@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { compareDesc, format, parseISO } from 'date-fns'
+//import { compareDesc, format, parseISO } from 'date-fns'
 //import { allPosts, Post } from 'contentlayer/generated'
 import Img from '../components/ui/Image';
 
@@ -17,9 +17,9 @@ function PostCard(post) {
         </Link>
 
       </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-white">
+      {/* <time dateTime={post.date} className="mb-2 block text-xs text-white">
         {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time>
+      </time> */}
       <div className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: post.body.html }} />
     </div>
   )
