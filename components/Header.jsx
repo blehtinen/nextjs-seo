@@ -41,7 +41,7 @@ export default function Header() {
             <nav className="flex items-center justify-between flex-wrap p-6">
                 <div className="flex items-center flex-shrink-0 text-white mr-6 sm:text-center">
                 <Link href='/'>
-                <h1 className='text-5xl font-bold text-center'>My Blog</h1>
+                <h1 className='text-5xl font-bold text-center'>My Blog DUDE</h1>
                 </Link>
               
                         
