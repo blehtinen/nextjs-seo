@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { compareDesc, format, parseISO } from 'date-fns'
-import { allPosts, Post } from 'contentlayer/generated'
+//import { allPosts, Post } from 'contentlayer/generated'
 import Img from '../components/ui/Image';
 
 function PostCard(post) {
@@ -26,15 +26,15 @@ function PostCard(post) {
 }
 
 export default function Home() {
-  const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+//  const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
   return (
     <div className="p-12 text-white">
       <h1 className="mx-auto text-center mb-8 text-center text-2xl font-black">Blog</h1>
       <div className='flex'>
-        {posts.map((post, idx) => (
+        {/* {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
-        ))}
+        ))} */}
       </div>
 
     </div>
