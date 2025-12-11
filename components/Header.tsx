@@ -1,5 +1,5 @@
 'use client'
-import { React, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import hamburger from '../public/hamburger-white.webp'
@@ -7,7 +7,7 @@ import hamburger from '../public/hamburger-white.webp'
 export default function Header() {
     // This will toggle the navBar when the hamburger image is clicked
     const [nav, setNav] = useState(false)
-    function toggleNav(e) {
+    function toggleNav(e: any) {
         setNav(prevState => !prevState)
     }
     return (

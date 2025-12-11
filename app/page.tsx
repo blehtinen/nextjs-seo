@@ -3,7 +3,7 @@ import Link from 'next/link'
 //import { allPosts, Post } from 'contentlayer/generated'
 import Img from '../components/ui/Image';
 
-function PostCard(post) {
+function PostCard(post:any) {
   return (
     <div className="mb-8">
       <h2 className="mb-1 text-xl">
